@@ -1,0 +1,5 @@
+# Components downloaded by Bower
+bower_components/
+
+# Webstorm project files
+.idea/

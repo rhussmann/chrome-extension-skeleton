@@ -1,0 +1,20 @@
+{
+  "name": "chrome-extension-skeleton",
+  "version": "0.0.1",
+  "authors": [
+    "Ricky Hussmann <ricky.hussmann@gmail.com>"
+  ],
+  "description": "Chrome extension skeleton with Bower plumbed in.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}
