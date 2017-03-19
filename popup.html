@@ -3,7 +3,14 @@
 <html>
   <head>
     <title>Getting Started Extension's Popup (with Angular!)</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"><!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <style>
+      html {
+        height: 600px;
+        width: 480px;
+      }
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
@@ -12,8 +19,19 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="extensionApp">
-    <div>{{"Angular is working!"}}</div>
+  <body ng-app="extensionApp" ng-controller="formController as formCtrl">
+    <div class="container">
+      <div class="row">
+        <h1>Welcome to the Extension</h1>
+        <form ng-submit="formCtrl.submit()">
+          <div class="form-group">
+            <label for="textInputField">Some Text</label>
+            <input type="text" id="textInputField" class="form-control"/>
+            <input type="submit" value="Submit" class="btn btn-default"/>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
 
